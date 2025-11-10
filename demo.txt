@@ -1,0 +1,1439 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Dashboard</title>
+<link rel="icon" type="image/png" href="/css/image/icon/logo.ico" />
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script> -->
+
+<script src="/css/bootstrap/jquery-3.5.1.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+	charset="utf-8"></script>
+
+	<!-- Tailwind CSS CDN -->
+	  <script src="https://cdn.tailwindcss.com"></script>
+	
+<link rel="stylesheet" href="/css/05425/head.css">
+<link rel="stylesheet" href="/css/logon.css">
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/reopen.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/js/select/fstdropdown.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+	integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+	integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+	crossorigin="anonymous" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+	integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+	crossorigin="anonymous"></script>
+<script src="/js/base.js"></script>
+
+
+<link rel="stylesheet" href="/css/createform.css">
+<script src="/js/from.js"></script>
+
+<!-- 	<link rel="stylesheet" th:href="@{/css/Calendar.css}"> -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="/js/chart.js"></script>
+<script src="/js/chart/Chart.min.js"></script>
+<script type="text/javascript"
+	src="/js/chart/jquery-1.12.0.min.js"></script>
+
+<script
+	src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<!--   ------CALANDER------------------------------------------------------------------------------ -->
+<!--<link-->
+<!--	href="http://fullcalendar.io/js/fullcalendar-2.2.5/fullcalendar.css"-->
+<!--	th:href="@{/webjars/fullcalendar/2.2.5/fullcalendar.css}"-->
+<!--	rel="stylesheet"></link>-->
+<!--<link-->
+<!--	href="http://fullcalendar.io/js/fullcalendar-2.2.5/fullcalendar.print.css"-->
+<!--	th:href="@{/webjars/fullcalendar/2.2.5/fullcalendar.print.css}"-->
+<!--	rel="stylesheet" media="print"></link>-->
+<!--<script-->
+<!--	src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"-->
+<!--	th:src="@{/webjars/momentjs/2.9.0/min/moment.min.js}"-->
+<!--	type="text/javascript"></script>-->
+<!--<script src="http://cdn.jsdelivr.net/webjars/jquery/3.4.1/jquery.min.js"-->
+<!--	th:src="@{/webjars/jquery/3.4.1/jquery.min.js}" type="text/javascript"></script>-->
+<!--<script-->
+<!--	src="http://fullcalendar.io/js/fullcalendar-2.2.5/fullcalendar.min.js"-->
+<!--	th:src="@{/webjars/fullcalendar/2.2.5/fullcalendar.min.js}"-->
+<!--	type="text/javascript"></script>-->
+
+<!--<script-->
+<!--	src='https://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>-->
+<!--<script-->
+<!--	src='https://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery.min.js'></script>-->
+<!--<script-->
+<!--	src="https://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>-->
+<!--<script-->
+<!--	src='https://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>-->
+
+<script
+	src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js'></script>
+<script
+	src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+<!--   ------CALANDER------------------------------------------------------------------------------ -->
+<!-- FullCalendar CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" rel="stylesheet"/>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<!-- FullCalendar JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+
+<!--   ------added by ashish------------------------------------------------------------------------------ ---->
+
+
+
+
+<script src="/css/bootstrap/jquery.dataTables.min.js"></script>
+<script src="/css/bootstrap/dataTables.bootstrap4.min.js"></script>
+<script src="/css/bootstrap/dataTables.buttons.min.js"></script>
+<script src="/css/bootstrap/buttons.bootstrap4.min.js"></script>
+<script src="/css/bootstrap/jszip.min.js"></script>
+<script src="/css/bootstrap/pdfmake.min.js"></script>
+<script src="/css/bootstrap/vfs_fonts.js"></script>
+<script src="/css/bootstrap/buttons.html5.min.js"></script>
+<script src="/css/bootstrap/buttons.print.min.js"></script>
+<script src="/css/bootstrap/buttons.colVis.min.js"></script>
+<script src="/css/bootstrap/dataTables.select.min.js"></script>
+<link rel="stylesheet"
+	href="/css/bootstrap/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="/css/bootstrap/twit3.css">
+<link rel="stylesheet"
+	href="/css/bootstrap/buttons.bootstrap4.min.css">
+<link rel="stylesheet"
+	href="/css/bootstrap/select.dataTables.min.css">
+<link rel="stylesheet" href="/css/ftt/keywords.css">
+<link rel="stylesheet" href="/css/toggle.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>-->
+
+<script type="text/javascript">
+$(document).ready(function () {
+  var heading = /**/ 'FT List';
+
+  var table = $('#example0').DataTable({
+    paging: false,
+    dom: 'Bfrtip',
+    select: true,
+    buttons: [
+      {
+        extend: 'copy',
+        text: 'Copy',
+        title: heading
+      },
+      {
+        extend: 'excel',
+        text: 'Excel',
+        title: heading,
+        exportOptions: { columns: ':visible' }
+      },
+      {
+        extend: 'print',
+        text: 'Print Selected',
+        title: heading,
+        exportOptions: { columns: ':visible' }
+      },
+      {
+        extend: 'print',
+        text: 'Print All',
+        title: heading,
+        exportOptions: { columns: ':visible', modifier: { selected: null } }
+      },
+      {
+        extend: 'pdfHtml5',
+        text: 'PDF (Landscape)',
+        title: '',
+        orientation: 'landscape',
+        pageSize: 'A4',
+        exportOptions: { columns: ':visible' },
+        customize: function (doc) {
+          const currentUrl = window.location.href;
+          const currentDate = new Date().toLocaleString();
+
+          // === General Styles ===
+          doc.defaultStyle.fontSize = 8;
+          doc.styles.tableHeader.fontSize = 9;
+          doc.styles.tableHeader.alignment = 'center';
+          doc.styles.tableHeader.fillColor = '#0073AA';
+          doc.styles.tableHeader.color = 'white';
+
+          // === Reduce Margins to Use Full Page Width ===
+          doc.pageMargins = [20, 50, 20, 40]; // [left, top, right, bottom]
+
+          // === Add Title and Metadata Header ===
+          doc.content.splice(0, 0, {
+            columns: [
+              { text: heading, fontSize: 14, bold: true, alignment: 'left' },
+              { text: 'Downloaded from: ' + currentUrl + '\n' + currentDate, alignment: 'right', fontSize: 8 }
+            ],
+            margin: [0, 0, 0, 10]
+          });
+
+          // === Find Table Object ===
+          let tableNode = null;
+          for (let i = 0; i < doc.content.length; i++) {
+            if (doc.content[i].table) {
+              tableNode = doc.content[i];
+              break;
+            }
+          }
+          if (!tableNode || !tableNode.table || !tableNode.table.body) return;
+
+          const body = tableNode.table.body;
+          const colCount = body[0].length;
+
+          // === Define Column Widths (Dynamic + Manual for Key Columns) ===
+          const customWidths = [
+            0,   // FT Id
+            25,   // Id
+            25,   // Actions
+            0,   // CSIR Thematic Area
+            35,   // Broad Area
+            35,  // Project Title
+            50,   // Project Category
+            30,   // Lab
+            20,   // PI
+            30   // Status
+            
+          ];
+
+          // Auto-fill remaining columns safely
+          tableNode.table.widths = customWidths.concat(
+            Array(Math.max(0, colCount - customWidths.length)).fill('*')
+          );
+
+          // === Center-align numeric data ===
+          for (let i = 1; i < body.length; i++) {
+            for (let j = 0; j < body[i].length; j++) {
+              const txt = (body[i][j].text || '').toString().trim();
+              if (txt && !isNaN(txt)) {
+                body[i][j].alignment = 'center';
+              }
+            }
+          }
+
+          // === Enable Text Wrapping for Long Cells ===
+          doc.styles.tableBodyEven = doc.styles.tableBodyEven || {};
+          doc.styles.tableBodyOdd = doc.styles.tableBodyOdd || {};
+          doc.styles.tableBodyEven.noWrap = false;
+          doc.styles.tableBodyOdd.noWrap = false;
+        }
+      },
+      'colvis',
+      'pageLength'
+    ]
+  });
+
+  // Append export buttons to top toolbar
+  table.buttons().container().appendTo('#example_wrapper .col-md-6:eq(0)');
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+  var heading = /**/ 'FT List';
+
+  var table = $('#example').DataTable({
+    paging: false,
+    dom: 'Bfrtip',
+    select: true,
+    buttons: [
+      {
+        extend: 'copy',
+        text: 'Copy',
+        title: heading
+      },
+      {
+        extend: 'excel',
+        text: 'Excel',
+        title: heading,
+        exportOptions: { columns: ':visible' }
+      },
+      {
+        extend: 'print',
+        text: 'Print Selected',
+        title: heading,
+        exportOptions: { columns: ':visible' }
+      },
+      {
+        extend: 'print',
+        text: 'Print All',
+        title: heading,
+        exportOptions: { columns: ':visible', modifier: { selected: null } }
+      },
+      {
+        extend: 'pdfHtml5',
+        text: 'PDF (Landscape)',
+        title: '',
+        orientation: 'landscape',
+        pageSize: 'A4',
+        exportOptions: { columns: ':visible' },
+        customize: function (doc) {
+          const currentUrl = window.location.href;
+          const currentDate = new Date().toLocaleString();
+
+          // === General Styles ===
+          doc.defaultStyle.fontSize = 8;
+          doc.styles.tableHeader.fontSize = 9;
+          doc.styles.tableHeader.alignment = 'center';
+          doc.styles.tableHeader.fillColor = '#0073AA';
+          doc.styles.tableHeader.color = 'white';
+
+          // === Reduce Margins to Use Full Page Width ===
+          doc.pageMargins = [20, 50, 20, 40]; // [left, top, right, bottom]
+
+          // === Add Title and Metadata Header ===
+          doc.content.splice(0, 0, {
+            columns: [
+              { text: heading, fontSize: 14, bold: true, alignment: 'left' },
+              { text: 'Downloaded from: ' + currentUrl + '\n' + currentDate, alignment: 'right', fontSize: 8 }
+            ],
+            margin: [0, 0, 0, 10]
+          });
+
+          // === Find Table Object ===
+          let tableNode = null;
+          for (let i = 0; i < doc.content.length; i++) {
+            if (doc.content[i].table) {
+              tableNode = doc.content[i];
+              break;
+            }
+          }
+          if (!tableNode || !tableNode.table || !tableNode.table.body) return;
+
+          const body = tableNode.table.body;
+          const colCount = body[0].length;
+
+          // === Define Column Widths (Dynamic + Manual for Key Columns) ===
+          const customWidths = [
+            25,   // FT Id
+            25,   // Id
+            25,   // Actions
+            40,   // CSIR Thematic Area
+            35,   // Broad Area
+            100,  // Project Title
+            25,   // Project Category
+            30,   // Lab
+            50,   // PI
+            30,   // Status
+            250,  // Objective
+            60    // Attachment
+          ];
+
+          // Auto-fill remaining columns safely
+          tableNode.table.widths = customWidths.concat(
+            Array(Math.max(0, colCount - customWidths.length)).fill('*')
+          );
+
+          // === Center-align numeric data ===
+          for (let i = 1; i < body.length; i++) {
+            for (let j = 0; j < body[i].length; j++) {
+              const txt = (body[i][j].text || '').toString().trim();
+              if (txt && !isNaN(txt)) {
+                body[i][j].alignment = 'center';
+              }
+            }
+          }
+
+          // === Enable Text Wrapping for Long Cells ===
+          doc.styles.tableBodyEven = doc.styles.tableBodyEven || {};
+          doc.styles.tableBodyOdd = doc.styles.tableBodyOdd || {};
+          doc.styles.tableBodyEven.noWrap = false;
+          doc.styles.tableBodyOdd.noWrap = false;
+        }
+      },
+      'colvis',
+      'pageLength'
+    ]
+  });
+
+  // Append export buttons to top toolbar
+  table.buttons().container().appendTo('#example_wrapper .col-md-6:eq(0)');
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      var table = $('#example2').DataTable({
+        lengthChange: false,
+        pagination: false,
+        dom: 'Bfrtip', 
+        lengthMenu: [
+          [-1, 10, 25, 50],
+          ['Show all', '10 rows', '25 rows', '50 rows']
+        ],
+        buttons: [
+          {
+            extend: 'copy',
+            text: 'Copy',
+            exportOptions: {
+              columns: ':visible',
+			  rows: { search: 'applied' }
+            }
+          },
+          {
+              extend: 'excel',
+              text: 'EXCEL',
+              exportOptions: {
+                columns: ':visible',
+				rows: { search: 'applied' }
+              }
+            },          
+          {
+            extend: 'print',
+            text: 'Print Selected',
+            exportOptions: {
+              columns: ':visible',
+			  rows: { search: 'applied' }
+            }
+          },
+          {
+            extend: 'print',
+            text: 'Print all',
+            exportOptions: {
+              modifier: {
+                selected: null
+              },
+			  rows: { search: 'applied' }
+            }
+          },         
+          {
+            extend: 'pdf',
+            text: 'PDF',
+            exportOptions: {
+              columns: ':visible',
+			  rows: { search: 'applied' }
+            }
+          },
+		  
+          'colvis',
+          'pageLength'
+        ],
+        select: true
+      });
+      table.buttons().container()
+        .appendTo('#example_wrapper .col-md-6:eq(0)');
+//       document.getElementById("example_paginate").style.display="none";
+    });
+  </script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+      var table = $('#example3').DataTable({
+        lengthChange: false,
+        pagination: false,
+        dom: 'Bfrtip', 
+        lengthMenu: [
+          [-1, 10, 25, 50],
+          ['Show all', '10 rows', '25 rows', '50 rows']
+        ],
+        buttons: [         
+          {
+              extend: 'excel',
+              text: 'EXCEL',
+              exportOptions: {
+                columns: ':visible'
+              }
+            },                   
+          {
+            extend: 'pdf',
+            text: 'PDF',
+            exportOptions: {
+              columns: ':visible'
+            }
+          },
+          'pageLength'
+        ],
+        select: true
+      });
+      table.buttons().container()
+        .appendTo('#example_wrapper .col-md-6:eq(0)');
+//       document.getElementById("example_paginate").style.display="none";
+    });
+  </script>
+
+<!-- For Emailer -->
+<script src="/js/emailer.js"></script>
+
+
+<STYLE>
+	.text-badge{
+	    background: red;
+	    border-radius: 50%;
+	    min-width: 30px;
+	    position: absolute;
+	    color: white;
+	    padding: 0px 4px;
+	    top: -12px; 
+	    right: -3px;
+	    z-index: 9;
+		font-weight: 800;
+	}
+	
+	#evaluationForm
+	{
+	table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 5px;
+    }
+	}
+</STYLE>
+<style>
+	.skill-tag {
+	    display: inline-block;
+	    margin: 5px;
+	    padding: 5px 10px;
+	    background: #e0e0e0;
+	    border-radius: 20px;
+	}
+	.skill-tag button {
+	    border: none;
+	    background: transparent;
+	    font-weight: bold;
+	    cursor: pointer;
+	    margin-left: 5px;
+	}
+</style>
+
+<!-- For Calander Data -->
+<script src="/js/calander/Calendar.js"></script>
+
+</head>
+<body>
+	<div id="page-preloader">
+		<span class="spinner"></span>
+	</div>
+
+	<section id="gethead">
+		<div
+			style="border-bottom: 1px solid #fff; height: auto; background: #ffff;">
+			<div class="head_2">
+				<div class="logo" style="display: flex; align-items: center;">
+					<div style="display: contents; text-align: center;">
+						<img alt="CSIR Logo"
+							src="/css/image/CSIR-Logo-With-Tagline.png">
+					</div>
+					<div style="display: grid; padding: 5px; align-content: center;">
+						<h3 class="logo_heading2 m-b-2">वैज्ञानिक तथा औद्योगिक
+							अनुसंधान परिषद्</h3>
+						<h3 class="logo_heading m-b-2">Council of Scientific &
+							Industrial Research</h3>
+						<h3 class="logo_heading2 m-b-2">(विज्ञान एवं प्रौद्योगिकी
+							मंत्रालय, भारत सरकार)</h3>
+						<h3 class="logo_heading m-b-0">Ministry of Science &
+							Technology, Govt. of India</h3>
+					</div>
+				</div>
+
+
+				<div class="external_links flex-col-rev">
+					<div>
+						<span class="beta-text">Beta Version</span>
+					</div>
+					<img src="/css/external_links/itlogo-1.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="header_color">
+			<div style="margin: 0 auto; max-width: 1180px;">
+				<header id="nav2" style="">
+					<div class="navigation">
+						<ul class="menu">
+							<div class="close-btn"></div>
+							<li class="menu-item"><a class="sub-btn" href="#"> <i
+									class="fa fa-user" aria-hidden="true" style="font-size: 20px;"></i>
+									Welcome 
+									<span>Rahul M Chirackal, CSIR HQ</span>
+									 <i
+									class="fa fa-angle-down"></i></a>
+								<ul class="sub-menu">
+									<li class="sub-item"><a href="/openchangepassword">Change
+											Password</a></li>
+									<!--<li class="sub-item"><a th:href="@{/logout}">Logout</a></li>-->
+									<li class="sub-item"><a href="/parichay/logout">Logout</a></li>
+								</ul></li>
+						</ul>
+
+					</div>
+					<div class="menu-btn"></div>
+					<div class="header__toggle">
+						<i class="fa fa-bars" id="header-toggle"></i>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div style="line-height: 35px; background: #fff; text-align: right;"></div>
+
+		
+	</section>
+
+	<section class="body" id="main_content">
+		<div
+			style="width: 100%; display: flex; flex-wrap: nowrap; flex-direction: row; justify-content: flex-end;">
+
+			<!-- Left Part NavBar-->
+			<div class="set1" id="set1">
+				<div class="nav" id="navbar">
+					<div class="nav__container">
+						<div>
+
+							<div class="nav__list">
+								<div class="nav__items">
+
+									<a href="/index" class="nav__link"> <i
+										class="fa fa-home fa-lg nav__icon"></i> <span
+										class="nav__name">Home</span>
+									</a>
+
+									<div class="nav__dropdown">
+										<a href="#" class="nav__link"> <i
+											class="fa fa-braille nav__icon"></i> <span class="nav__name">Support</span> <i
+											class="fa fa-chevron-down nav__icon nav__dropdown-icon"></i>
+										</a>
+
+										<div class="nav__dropdown-collapse">
+											<div class="nav__dropdown-content">
+												<a href="/opensupportform/27073"
+													class="nav__dropdown-item"> <i class="fa fa-file-text-o"></i>
+													<span class="nav__name">Service Request</span>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="nav__dropdown">
+										<a href="#" class="nav__link"> <i
+											class="fa fa-braille nav__icon"></i> <span class="nav__name">Call for Proposal</span> <i
+											class="fa fa-chevron-down nav__icon nav__dropdown-icon"></i>
+										</a>
+
+										<div class="nav__dropdown-collapse">
+											<div class="nav__dropdown-content">
+												<a href="/openFbrAddForm/29044"
+													class="nav__dropdown-item"> <i class="fa fa-list"></i>
+													<span class="nav__name">Add CFP</span>
+												</a><a href="/openCfp_List/29047"
+													class="nav__dropdown-item"> <i class="fa fa-list"></i>
+													<span class="nav__name">CFP List</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Part -->
+			<div id="main"
+				style="display: flex; flex-flow: row; flex-wrap: nowrap; width: 94.6%; align-items: flex-start;">
+
+				<!-- Main Middle Part -->
+				<section class="set2" style="width:100% !important">
+			
+
+		
+		
+						
+		<div>
+			<h4>Dashboard</h4>
+			<div style="display: flex;flex-wrap: wrap;">
+				
+				<!--<div class="btn-container das-btn-container">				
+									<div style="padding: 3px 20px;text-align:center;">
+										<span style="margin-bottom: 0;color:#6c757d;font-weight: 700;text-transform: uppercase;" id="Call for Proposal">Call for Proposal (FTT/FTC 2026)</span>
+									</div>
+									<div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
+										
+										<div class="das-btn">
+											<div><a class="" href="/open_ftt/29031" style="display: inline-block;"><i class="fa fa-address-card-o allotbtn" style="font-size:20px;"></i></a></div>
+											<div><a class="" href="/open_ftt/29031" style="padding: 5px;color: rgba(0,0,0,0.87);">Add New Proposal</a></div>
+										</div>
+										
+										<div class="das-btn">
+											<div><a class="" href="/openFtt_List/29032" style="display: inline-block;"><i class="fa fa-list allotbtn" style="font-size:20px;"></i></a></div>
+											<div><a class="" href="/openFtt_List/29032" style="padding: 5px;color: rgba(0,0,0,0.87);">List</a></div>
+										</div>
+									</div>		
+								</div>-->
+								
+				<div class="btn-container das-btn-container">				
+					<div style="padding: 3px 20px;text-align:center;">
+						<span style="margin-bottom: 0;color:#6c757d;font-weight: 700;text-transform: uppercase;" id="Support">Support</span>
+					</div>
+					
+					
+					<div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
+						<div  class="das-btn">
+							<div><a class="" href="/opensupportform/27073" style="display: inline-block;"><i class="fa fa-file-text-o allotbtn" style="font-size:30px;"></i></a></div>
+							<div><a class="" href="/opensupportform/27073" style="padding: 5px;color: rgba(0,0,0,0.87);">Service Request</a></div>
+						</div>
+					</div>		
+				</div>
+								
+				<div class="btn-container das-btn-container">				
+					<div style="padding: 3px 20px;text-align:center;">
+						<span style="margin-bottom: 0;color:#6c757d;font-weight: 700;text-transform: uppercase;" id="Call for Proposal">Call for Proposal</span>
+					</div>
+					
+					
+					<div style="display: flex;flex-wrap: wrap;justify-content: flex-start;">
+						<div  class="das-btn">
+							<div><a class="" href="/openFbrAddForm/29044" style="display: inline-block;"><i class="fa fa-list allotbtn" style="font-size:30px;"></i></a></div>
+							<div><a class="" href="/openFbrAddForm/29044" style="padding: 5px;color: rgba(0,0,0,0.87);">Add CFP</a></div>
+						</div>
+						<div  class="das-btn">
+							<div><a class="" href="/openCfp_List/29047" style="display: inline-block;"><i class="fa fa-list allotbtn" style="font-size:30px;"></i></a></div>
+							<div><a class="" href="/openCfp_List/29047" style="padding: 5px;color: rgba(0,0,0,0.87);">CFP List</a></div>
+						</div>
+					</div>		
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+
+				<!-- Right Part -->
+				
+
+			</div>
+
+
+			
+
+		</div>
+
+	</section>
+
+	<section id="getfooter">
+		<div class="carousel-container"
+			style="padding: 0px 0 0px 0px; background: url(/css/image/carousel-bg.png) repeat; border-top: 1px solid #d2d2d2;">
+			<div
+				style="height: 10px; width: 100%; background: url(/css/image/after-bg.png) repeat; z-index: 10;">
+			</div>
+			<div
+				style="margin: 0 auto; display: block; max-width: 1180px; width: 90%;">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<a href="https://twitter.com/cyberdost?lang=en" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image" src="/css/footer_img/cyber_1.png"
+							alt="Cyber Dost" title="Cyber Dost" draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="https://pledge.cvc.nic.in/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image"
+							src="/css/footer_img/Integrity_Pledge_1_0_1.png"
+							alt="Central Vigilance Commission "
+							title="Central Vigilance Commission " draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="https://services.india.gov.in/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image"
+							src="/css/footer_img/services_portal_1.png"
+							alt="National Government Services Portal"
+							title="National Government Services Portal" draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="https://transformingindia.mygov.in/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image" src="/css/footer_img/img-1_1.png"
+							alt="Transforming India" title="Transforming India"
+							draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="http://www.globalresearchalliance.org/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image" src="/css/footer_img/img-4_1.png"
+							alt="Global Research Alliance" title="Global Research Alliance"
+							draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="https://www.india.gov.in/}" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image" src="/css/footer_img/india-gov_1.png"
+							alt="National Portal of India" title="National Portal of India"
+							draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="http://mygov.in/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image" src="/css/footer_img/mygov_1.png"
+							alt="MyGov" title="MyGov" draggable="false"></a>
+					</div>
+					<div class="item">
+						<a href="https://www.aarogyapath.in/" target="_blank"
+							title="External site that opens in a new window "><img
+							typeof="foaf:Image"
+							src="/css/footer_img/aarogyapath1_1.png" alt="Aarogyapath"
+							title="Aarogyapath" draggable="false"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div
+			style="background-repeat: repeat; background-color: #333; background-image: url(/css/image/footer-bottom-bg.png);">
+			<div class=""
+				style="text-align: center; font-size: 70%; line-height: 125%; padding: 20px;">
+				<p style="color: #ffff">
+					Website Content Managed by Council of Scientific &amp; Industrial
+					Research <br> Designed, Developed and Hosted by<br> <span
+						style="color: #b8b8b8;">Council of Scientific &amp;
+						Industrial Research ( CSIR )</span>
+				</p>
+			</div>
+		</div>
+		
+	</section>
+
+</body>
+
+<script src="/js/menumodel.js"></script>
+<!-- carousel js -->
+<script type="text/javascript">
+  $('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  })
+</script>
+
+<script src="/js/dishide.js"></script>
+<script src="/js/support/support.js"></script>
+
+<!-- Modal -->
+<script type="text/javascript">
+  var modal1 = document.getElementById("myModal");
+  var btn1 = document.getElementById("myBtn");
+  var span1 = document.getElementById("close");
+  btn1.onclick = function () {
+    modal.style.display = "block";
+  }
+  span1.onclick = function () {
+    modal.style.display = "none";
+  }
+  window.onclick = function (event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+  }
+</script>
+<script src="/js/select/fstdropdown.js"></script>
+
+<!--  support change field  -->
+
+<!-- accordion -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.marginBottom=null;
+      panel.style.borderBottom=null;
+    } else {    
+    	var vvv=$(panel).children()[0];
+    	var ddd=$(vvv).text();
+     	var www=$(panel).children()[1];
+     	$(www).empty();
+    	$(ddd).appendTo(www);
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.marginBottom="20px";
+      panel.style.borderBottom="1px solid rgb(204, 204, 204)";
+    } 
+  });
+}
+
+</script>
+
+<!-- Reopen Popup -->
+<script>
+//Reopen model
+  // Get the reopen
+  var reopen = document.getElementById("myreopen");
+  // Get the button that opens the reopen
+  var btn = document.getElementsByClassName("myReopenBtn")[0];
+  // Get the <span> element that closes the reopen
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the reopen 
+  $(".myReopenBtn").click(function () {
+    reopen.style.display = "block";
+  });
+  // When the user clicks on <span> (x), close the reopen
+  span.onclick = function () {
+    reopen.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the reopen, close it
+  window.onclick = function (event) {
+    if (event.target == reopen) {
+      reopen.style.display = "none";
+    }
+  }
+  </script>
+
+<script src="/js/lcm/lcmdisAndHide.js"></script>
+
+<script src="/js/support/level.js"></script>
+
+<script src="/js/tranche/tranche.js"></script>
+
+<script>	
+	document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'm' && e.ctrlKey) {
+		document.getElementById("Mobile_No").focus();
+    }
+	});	
+</script>
+
+<script>
+	const dateInput = document.getElementById('userselecteddate');
+	
+	//✅ Using the visitor's timezone
+	dateInput.value = formatDate();
+	
+	// console.log(formatDate());
+	
+	function padTo2Digits(num) {
+	return num.toString().padStart(2, '0');
+	}
+	
+	function formatDate(date = new Date()) {
+	return [
+	 date.getFullYear(),
+	 padTo2Digits(date.getMonth() + 1),
+	 padTo2Digits(date.getDate()),
+	].join('-');
+	}
+</script>
+
+<script src="/js/tableapp/tableapp.js"></script>
+<script src="/js/tableapp/datatypetable.js"></script>
+
+<!-- Save user filled data of table by user -->
+<script src="/js/tableapp/tableappuserdata.js"></script>
+<script src="/js/tableapp/tableappcreatedcr.js"></script>
+
+<script src="/js/support/supportmgr.js"></script>
+
+
+<script src="/js/tableapp/iframefunc.js"></script>
+<script src="/js/tableapp/savetableheader.js"></script>
+<script src="/js/multiselect-dropdown.js"></script>
+<script src="/js/pms/validcheck.js"></script>
+<script src="/js/pms/filesizecheck.js"></script>
+<script src="/js/pms/pmsmodal.js"></script>
+<link rel="stylesheet" href="/css/pms/style.css">
+
+
+
+
+<script src="/js/manageappsjs/manageapps.js"></script>
+<script src="/js/manageappsjs/managebuttons.js"></script>
+<script src="/js/manageappsjs/managebuttonallot.js"></script>
+<script src="/js/appmanagementjs/appmanagement.js"></script>
+<script src="/js/manageappsjs/userappmanagement.js"></script>
+<script src="/js/manageappsjs/manageou.js"></script>
+<script src="/js/manageappsjs/manageuser.js"></script>
+<script src="/js/manageappsjs/managegroupset.js"></script>
+<script src="/js/manageappsjs/manageappadmin.js"></script>
+<script src="/js/manageappsjs/managevdata.js"></script>
+<script src="/js/support/helpdeskanalytics.js"></script>
+<script src="/js/lcm/lcmanalytics.js"></script>
+
+<script src="/js/fito/event.js"></script>
+<script src="/js/fito/agenda.js"></script>
+
+<script src="/js/pms/view_userProposal.js"></script>
+
+
+<!-- for searchable select drop downs -->
+
+<script src="https://cdn.jsdelivr.net/npm/tom-select@2.0.0-rc.4/dist/js/tom-select.complete.min.js"></script>
+<!-- <script th:src="@{/js/tom-select/tom-select.complete.min.js}"></script> -->
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/tom-select@2.0.0-rc.4/dist/css/tom-select.css" rel="stylesheet"> -->
+<link href="/css/tom-select/tom-select.css" rel="stylesheet">
+
+<!-- Tom Select assets (v2) -->
+<!-- tom-select -->
+<script>
+/* ----------------- to load all select tags ----------------- */ 
+	document.querySelectorAll('.tom-select').forEach((el)=>{
+		let settings = {};
+	 	new TomSelect(el,{sortField: {
+	         field: "text",
+	         direction: "asc"
+	     }});
+	 	
+	});
+	
+/* ----------------- to load all select tags with class dis ----------------- */ 
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('.dis').forEach((el)=>{
+			let settings = {};
+			el.setAttribute("style", "pointer-events: none;");
+		});
+	});
+</script>
+
+
+
+
+
+
+<script src="/js/ftt/ftt.js"></script>
+<script src="/js/lcm/lcm.js"></script>
+<!-- to validate -->
+<script src="/js/PasswordValidation.js"></script>
+
+<script src="/js/helpcontent/helpcontent.js"></script>
+<link rel="stylesheet" href="/css/base.css">
+
+<script src="/js/tranche/tranche.js"></script>
+<script src="/js/leftnotificationbar.js"></script>
+
+<!--<script>
+document.addEventListener("DOMContentLoaded", function () {
+	const tbody   = document.getElementById("fttdata");
+    const rows    = tbody.querySelectorAll("tr"); 
+    const filterDiv = document.getElementById("thematicAreaFilters");
+
+    const areaCounts = {};
+    const allRows = Array.from(rows);
+
+    // Step 1: Build area count map
+    allRows.forEach(row => {
+		console.log("822 : "+row)
+        const area = row.cells[2].innerText.trim(); // CSIR Thematic Area (2nd column)
+        if (!areaCounts[area]) areaCounts[area] = 0;
+        areaCounts[area]++;
+    });
+
+    // Step 2: Create "All" button
+    const allBtn = document.createElement("button");
+    allBtn.className = "btn btn-outline-primary btn-sm active";
+    allBtn.innerHTML = `All <span class="text-badge">${allRows.length}</span>`;
+    allBtn.dataset.value = "";
+    filterDiv.appendChild(allBtn);
+
+    // Step 3: Create one button per unique area
+    Object.entries(areaCounts).forEach(([area, count]) => {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-outline-primary btn-sm";
+        btn.innerHTML = `${area} <span class="text-badge">${count}</span>`;
+        btn.dataset.value = area;
+        filterDiv.appendChild(btn);
+    });
+
+    // Step 4: Handle button clicks
+    filterDiv.addEventListener("click", function (e) {
+        if (e.target.tagName !== "BUTTON") return;
+
+        // Update button active classes
+        filterDiv.querySelectorAll("button").forEach(btn => btn.classList.remove("active", "btn-primary"));
+        e.target.classList.add("active", "btn-primary");
+
+        const selectedArea = e.target.dataset.value;
+
+        // Show/hide rows
+        allRows.forEach(row => {
+            const area = row.cells[2].innerText.trim();
+            row.style.display = (selectedArea === "" || area === selectedArea) ? "" : "none";
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	const tbody   = document.getElementById("fttdata");
+    const rows    = tbody.querySelectorAll("tr"); 
+    const filterDiv = document.getElementById("projectCategoryFilters");
+
+    const areaCounts = {};
+    const allRows = Array.from(rows);
+
+    // Step 1: Build area count map
+    allRows.forEach(row => {
+		console.log("822 : "+row)
+        const area = row.cells[5].innerText.trim(); // CSIR Thematic Area (2nd column)
+        if (!areaCounts[area]) areaCounts[area] = 0;
+        areaCounts[area]++;
+    });
+
+    // Step 2: Create "All" button
+    const allBtn = document.createElement("button");
+    allBtn.className = "btn btn-outline-primary btn-sm active";
+    allBtn.innerHTML = `All <span class="text-badge">${allRows.length}</span>`;
+    allBtn.dataset.value = "";
+    filterDiv.appendChild(allBtn);
+
+    // Step 3: Create one button per unique area
+    Object.entries(areaCounts).forEach(([area, count]) => {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-outline-primary btn-sm";
+        btn.innerHTML = `${area} <span class="text-badge">${count}</span>`;
+        btn.dataset.value = area;
+        filterDiv.appendChild(btn);
+    });
+
+    // Step 4: Handle button clicks
+    filterDiv.addEventListener("click", function (e) {
+        if (e.target.tagName !== "BUTTON") return;
+
+        // Update button active classes
+        filterDiv.querySelectorAll("button").forEach(btn => btn.classList.remove("active", "btn-primary"));
+        e.target.classList.add("active", "btn-primary");
+
+        const selectedArea = e.target.dataset.value;
+
+        // Show/hide rows
+        allRows.forEach(row => {
+            const area = row.cells[5].innerText.trim();
+            row.style.display = (selectedArea === "" || area === selectedArea) ? "" : "none";
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	const tbody   = document.getElementById("fttdata");
+    const rows    = tbody.querySelectorAll("tr"); 
+    const filterDiv = document.getElementById("statusFilters");
+
+    const areaCounts = {};
+    const allRows = Array.from(rows);
+
+    // Step 1: Build area count map
+    allRows.forEach(row => {
+		console.log("822 : "+row)
+        const area = row.cells[8].innerText.trim(); // CSIR Thematic Area (2nd column)
+        if (!areaCounts[area]) areaCounts[area] = 0;
+        areaCounts[area]++;
+    });
+
+    // Step 2: Create "All" button
+    const allBtn = document.createElement("button");
+    allBtn.className = "btn btn-outline-primary btn-sm active";
+    allBtn.innerHTML = `All <span class="text-badge">${allRows.length}</span>`;
+    allBtn.dataset.value = "";
+    filterDiv.appendChild(allBtn);
+
+    // Step 3: Create one button per unique area
+    Object.entries(areaCounts).forEach(([area, count]) => {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-outline-primary btn-sm";
+        btn.innerHTML = `${area} <span class="text-badge">${count}</span>`;
+        btn.dataset.value = area;
+        filterDiv.appendChild(btn);
+    });
+
+    // Step 4: Handle button clicks
+    filterDiv.addEventListener("click", function (e) {
+        if (e.target.tagName !== "BUTTON") return;
+
+        // Update button active classes
+        filterDiv.querySelectorAll("button").forEach(btn => btn.classList.remove("active", "btn-primary"));
+        e.target.classList.add("active", "btn-primary");
+
+        const selectedArea = e.target.dataset.value;
+
+        // Show/hide rows
+        allRows.forEach(row => {
+            const area = row.cells[8].innerText.trim();
+            row.style.display = (selectedArea === "" || area === selectedArea) ? "" : "none";
+        });
+    });
+});
+</script>-->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tbody = document.getElementById("fttdata");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+
+    let selectedFilters = {
+        thematicArea: "",
+        projectCategory: "",
+        status: ""
+    };
+
+    function applyFilters() {
+        let visibleCount = 0;
+
+        rows.forEach(row => {
+            const thematicArea = row.cells[4].innerText.trim();
+            const projectCategory = row.cells[8].innerText.trim();
+            const status = row.cells[11].innerText.trim();
+
+            const matchThematicArea = !selectedFilters.thematicArea || thematicArea === selectedFilters.thematicArea;
+            const matchProjectCategory = !selectedFilters.projectCategory || projectCategory === selectedFilters.projectCategory;
+            const matchStatus = !selectedFilters.status || status === selectedFilters.status;
+
+            const isVisible = matchThematicArea && matchProjectCategory && matchStatus;
+            row.style.display = isVisible ? "" : "none";
+
+            if (isVisible) visibleCount++;
+        });
+
+        // Show visible count
+        document.getElementById("filterCount").innerText =
+            `Showing ${visibleCount} of ${rows.length} records`;
+    }
+
+    function buildFilterButtons(columnIndex, filterDivId, keyName) {
+        const filterDiv = document.getElementById(filterDivId);
+        const counts = {};
+
+        rows.forEach(row => {
+            const value = row.cells[columnIndex].innerText.trim();
+            counts[value] = (counts[value] || 0) + 1;
+        });
+
+        const allBtn = document.createElement("button");
+        allBtn.className = "btn btn-outline-primary btn-sm active";
+        allBtn.innerHTML = `All <span class="text-badge">${rows.length}</span>`;
+        allBtn.dataset.value = "";
+        allBtn.style = "font-weight: 600;font-size: 16px;margin-right:0.5rem;padding: 5px 25px;";
+        filterDiv.appendChild(allBtn);
+
+        Object.entries(counts).forEach(([value, count]) => {
+            const btn = document.createElement("button");
+            btn.className = "btn btn-outline-primary btn-sm";
+            btn.innerHTML = `${value} <span class="text-badge">${count}</span>`;
+            btn.dataset.value = value;
+            btn.style = "font-weight: 600;font-size: 16px; margin-right:0.5rem; padding: 5px 25px;";
+            filterDiv.appendChild(btn);
+        });
+
+        filterDiv.addEventListener("click", function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
+
+            filterDiv.querySelectorAll("button").forEach(b => b.classList.remove("active", "btn-primary"));
+            btn.classList.add("active", "btn-primary");
+
+            selectedFilters[keyName] = btn.dataset.value;
+            applyFilters();
+        });
+    }
+
+    buildFilterButtons(4, "thematicAreaFilters", "thematicArea");
+    buildFilterButtons(8, "projectCategoryFilters", "projectCategory");
+    buildFilterButtons(11, "statusFilters", "status");
+
+    applyFilters();
+});
+</script>
+
+
+
+<script>
+	
+	function getUserData(val) {
+	    fetch(`/getUserData?email=` + encodeURIComponent(val.toLowerCase()))
+	        .then(response => response.json())
+	        .then(data => {
+	            console.log(data.userid); // Debugging
+				document.getElementById("getUserDiv").style.display = "block";
+				document.getElementById("addUserDiv").style.display = "none";
+	            document.getElementById("getUserDiv").innerHTML = `
+	                <div>
+	                    <div class="form-group column">
+	                        <label>Display Name:</label>
+	                        <span>`+data.displayname+`</span>
+	                    </div>
+	                </div>
+	                <div>
+	                    <div class="form-group column">
+	                        <label>Lab:</label>
+	                        <span>`+data.belongsToCsir+`</span>
+	                    </div>
+	                </div>
+					<div>					<div class="form-group column">
+											<label>Password Reset:</label>
+					                        <button class="btn edit" id="pswdResetBtn" onclick="resetPswd(this.id)" style="width:100%;">Reset</button>
+					                       	<div id="resetConfirmationDiv" style="display:none;">
+												<button  class="btn previous" ><a href="/resetDefaultPassword/`+data.userid+`">Are you sure?</a></button>
+												<button class="btn next" onclick="cancelReset()">Cancel</button>
+											</div>
+					                    </div></div>
+					<div>
+					                    <div class="form-group column">
+					                        <label>Role:</label>
+					                        <span>`+data.role+`</span>
+					                    </div>
+					                </div>
+									<div>`;
+	        })
+	        .catch(error => {
+	            console.error("Error fetching user data:", error);
+				document.getElementById("getUserDiv").style.display = "none";
+	            document.getElementById("addUserDiv").style.display = "block";
+	        });
+	}
+	
+	function resetPswd(id)
+	{
+		document.getElementById(id).style.display="none";
+		document.getElementById("resetConfirmationDiv").style.display="block";
+	}
+	function cancelReset()
+	{
+		document.getElementById(id).style.display="block";
+				document.getElementById("resetConfirmationDiv").style.display="none";
+	}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tbody = document.getElementById("lcmdata");
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    const filterDiv = document.getElementById("contemptFilter");
+
+    let selectedFilter = "";
+
+    function applyFilters() {
+        let visibleCount = 0;
+
+        rows.forEach(row => {
+            const value = row.cells[15].innerText.trim(); // contempt or non-contempt
+            const matches = !selectedFilter || value === selectedFilter;
+
+            row.style.display = matches ? "" : "none";
+            if (matches) visibleCount++;
+        });
+
+        document.getElementById("filterCount").innerText =
+            `Showing ${visibleCount} of ${rows.length} records`;
+    }
+
+    function buildFilterButtons() {
+        const counts = { contempt: 0, "non-contempt": 0 };
+
+        // Count both types
+        rows.forEach(row => {
+            const value = row.cells[15].innerText.trim();
+            if (value === "contempt" || value === "non-contempt") {
+                counts[value]++;
+            }
+        });
+
+        // Create "All" button
+        const allBtn = document.createElement("button");
+        allBtn.className = "btn btn-outline-primary btn-sm active";
+        allBtn.dataset.value = "";
+        allBtn.innerHTML = `All <span class="text-badge">${rows.length}</span>`;
+        allBtn.style = "font-weight:600;font-size:16px;margin-right:0.5rem;padding:5px 25px;";
+        filterDiv.appendChild(allBtn);
+
+        // Create contempt / non-contempt buttons
+        Object.entries(counts).forEach(([key, count]) => {
+            const btn = document.createElement("button");
+            btn.className = "btn btn-outline-primary btn-sm";
+            btn.dataset.value = key;
+            btn.innerHTML = `${key} <span class="text-badge">${count}</span>`;
+            btn.style = "font-weight:600;font-size:16px;margin-right:0.5rem;padding:5px 25px;";
+            filterDiv.appendChild(btn);
+        });
+
+        // Button click handler
+        filterDiv.addEventListener("click", function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
+
+            filterDiv.querySelectorAll("button").forEach(b => b.classList.remove("active", "btn-primary"));
+            btn.classList.add("active", "btn-primary");
+
+            selectedFilter = btn.dataset.value;
+            applyFilters();
+        });
+    }
+
+    buildFilterButtons();
+    applyFilters();
+});
+</script>
+
+
+</body>
+
+
+</html>
