@@ -252,3 +252,11 @@ display: block;
 
 
 }
+
+/* add a bit more separation between the buttons */
+.login-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;      /* was about 0.75rem – gives ~8px more space */
+  margin-top: 1.5rem;
+}

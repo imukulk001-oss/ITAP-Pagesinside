@@ -14,7 +14,7 @@ const HeroSection = () => {
     <section className="hero-section" id="main-content">
       <div className="hero-background">
         <img 
-          src="/images/hero-image.png" 
+          src="/images/bgblue.jpg" 
           alt="CSIR IT Apps" 
           className="hero-image"
         />
