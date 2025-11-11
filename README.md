@@ -1,6 +1,6 @@
 # CSIR IT Apps Portal - Landing Page
 
-A responsive, well-structured landing page for CSIR IT Apps Portal built with React and TypeScript, based on the Figma design.
+A responsive, well-structured landing page for CSIR IT Apps Portal built with ReactJS.
 
 ## Getting Started
 
