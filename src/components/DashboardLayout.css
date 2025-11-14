@@ -1,0 +1,41 @@
+.layout {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  flex-grow: 1;
+  background: #f5f8ff;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.collapsed {
+  margin-left: 60px;
+}
+
+/* ============================================================ */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.dashboard-content {
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dashboard-content.expanded {
+  margin-left: 80px;
+}

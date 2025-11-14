@@ -1,0 +1,48 @@
+.dashboard-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4f6ff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.control-item:hover {
+  background: #e5edff;
+}
+
+.control-icon {
+  color: #4c6ef5;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f4f6ff;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 6px;
+  width: 100%;
+  font-size: 14px;
+}

@@ -8,12 +8,6 @@ const Header1 = () => {
     month: 'short',
     year: 'numeric',
   });
-  // const formattedTime = currentDate.toLocaleTimeString('en-US', {
-  //   hour: '2-digit',
-  //   minute: '2-digit',
-  //   second: '2-digit',
-  //   hour12: true,
-  // });
   const dayName = currentDate.toLocaleDateString('en-US', { weekday: 'short' });
 
   return (
@@ -23,16 +17,6 @@ const Header1 = () => {
           Skip to main content.
         </a>
         <div className="divider"></div>
-        {/* <a href="#screen-reader" className="accessibility-link">
-          Screen Reader Access
-        </a> */}
-        {/* <a href="#text-size" className="accessibility-link">
-          Text Size
-        </a>
-        <div className="text-size-controls">
-          <button className="text-size-btn" aria-label="Decrease text size">A-</button>
-          <button className="text-size-btn" aria-label="Increase text size">A+</button>
-        </div> */}
         <div className="date-time">
           {formattedDate} | {dayName}
         </div>

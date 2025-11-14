@@ -7,13 +7,6 @@ const Header2 = () => {
     window.location.href = "https://www.csir.res.in";
   };
 
-  const handleLoginClick = () => {
-    const loginSection = document.getElementById("login-section-scr");
-    if (loginSection) {
-      loginSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <header className="header2">
       <div className="header2-content">
@@ -34,26 +27,7 @@ const Header2 = () => {
             </p>
           </div>
         </div>
-        <div className="header2-right">
-          <button className="hero-button" onClick={handleLoginClick}>
-            Login
-            <svg
-              width="10"
-              height="8"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 4H9M9 4L6 1M9 4L6 7"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
+        
       </div>
     </header>
   );
