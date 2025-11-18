@@ -1,5 +1,19 @@
+:root {
+  --sidebar-collapsed: 100px;
+  --sidebar-expanded: 240px;
+}
+
+
 .sidebar {
-  width: 240px;
+  width: var(--sidebar-collapsed);
+}
+
+.sidebar:hover {
+  width: var(--sidebar-expanded);
+}
+
+
+.sidebar {
   background-color: #ffffff;
   border-right: 1px solid #e5e5e5;
   padding: 16px;
@@ -8,6 +22,15 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  /* Hover behavior: collapsed by default */
+  width: 100px; /* increased from 60px so icons have more room when static */
+  transition: width 0.25s ease-out;
+  overflow-x: hidden;
+}
+
+.sidebar:hover {
+  width: 240px; /* expanded width (your original) */
 }
 
 .sidebar-title {
@@ -15,6 +38,17 @@
   font-weight: 600;
   color: #333;
   margin-bottom: 20px;
+  white-space: nowrap;
+
+  /* hidden until hover */
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.sidebar:hover .sidebar-title {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .sidebar-menu {
@@ -25,6 +59,7 @@
 
 .menu-item {
   font-size: 0.9rem;
+  position: relative; /* so :hover affects submenu */
 }
 
 .menu-header {
@@ -46,20 +81,55 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  overflow: hidden;
 }
 
+/* ICONS: bigger so they’re clearly visible when sidebar is static */
 .menu-icon {
   color: #6a5acd;
-  font-size: 1rem;
+  font-size: 2rem; /* was 1rem — now large enough to see clearly */
+  flex-shrink: 0;
 }
 
-/* Submenu */
+/* Text labels & chevrons hidden when collapsed, shown on sidebar hover */
+.menu-label,
+.menu-chevron {
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.sidebar:hover .menu-label,
+.sidebar:hover .menu-chevron {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-chevron {
+  font-size: 0.6rem;
+  color: #9ca3af;
+  margin-left: 4px;
+}
+
+/* Submenu: hover-controlled, not state-controlled */
 .submenu {
   margin-left: 24px;
   margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, opacity 0.2s ease;
+}
+
+/* When hovering the menu item, show its submenu */
+.menu-item:hover .submenu {
+  max-height: 500px; /* large enough for all items */
+  opacity: 1;
 }
 
 .submenu-item {
@@ -71,6 +141,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
   color: #555;
+  white-space: nowrap;
 }
 
 .submenu-item:hover {
@@ -90,33 +161,4 @@
 .sidebar::-webkit-scrollbar-thumb {
   background: #d1d1d1;
   border-radius: 3px;
-} 
-
-
-/* ============================================================= */
-
-/* .sidebar {
-  background-color: #1f1f2e;
-  color: #fff;
-  width: 240px;
-  transition: width 0.3s ease;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  flex-shrink: 0;
 }
-
-.sidebar.closed {
-  width: 60px;
-}
-
-.sidebar.closed .submenu,
-.sidebar.closed .submenu-item span,
-.sidebar.closed .menu-header span:not(.menu-icon),
-.sidebar.closed .sidebar-title {
-  display: none;
-}
-
-.sidebar.closed .menu-icon {
-  margin: 0 auto;
-} */
