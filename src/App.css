@@ -9,3 +9,16 @@
   background: #f5f8ff;
   min-height: 100vh;
 }
+
+.card {
+  border-radius: 15px !important;
+}
+
+.list-group-item {
+  cursor: pointer;
+  border: none !important;
+}
+
+.list-group-item:hover {
+  background-color: #e7efff !important;
+}

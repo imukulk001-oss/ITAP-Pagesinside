@@ -162,3 +162,20 @@
   background: #d1d1d1;
   border-radius: 3px;
 }
+
+.sidebar {
+  width: 100px;
+}
+
+.sidebar:hover {
+  width: 240px;
+}
+
+.sidebar {
+  width: 100px;
+  transition: width 0.25s ease;
+}
+
+.sidebar.expanded {
+  width: 240px;
+}

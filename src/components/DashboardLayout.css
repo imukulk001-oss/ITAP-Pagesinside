@@ -1,19 +1,24 @@
 .layout {
   display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
+/* Sidebar collapsed width */
 .main-content {
-  margin-left: 240px;
+  margin-left: 100px;
   padding: 20px;
   flex-grow: 1;
   background: #f5f8ff;
   min-height: 100vh;
-  transition: margin-left 0.3s ease;
+  transition: margin-left 0.25s ease;
 }
 
-.main-content.collapsed {
-  margin-left: 60px;
+/* When sidebar expands on hover */
+.sidebar:hover ~ .main-content {
+  margin-left: 240px;
 }
+
 
 /* ============================================================ */
 

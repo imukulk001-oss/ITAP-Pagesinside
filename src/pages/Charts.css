@@ -1,0 +1,79 @@
+/* Page container */
+.charts-container {
+  padding: 20px;
+}
+
+/* Header */
+.charts-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.view-title {
+  font-weight: 600;
+  color: #3f51b5;
+}
+
+/* KPI Grid */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.kpi-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e8ec;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.kpi-card h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.kpi-card h2 {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 24px;
+}
+
+.kpi-change {
+  margin-top: 8px;
+  color: #4caf50;
+  font-size: 12px;
+}
+
+/* Chart row */
+.chart-row {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 20px;
+}
+
+/* Chart cards */
+.chart-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Chart layout inside card */
+.chart-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pie-container,
+.bar-container {
+  flex: 1;
+  min-width: 250px;
+}

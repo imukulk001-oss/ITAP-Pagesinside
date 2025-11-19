@@ -115,3 +115,52 @@
   font-size: 0.85rem;
   color: #333;
 }
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;       /* full-page layout */
+}
+
+/* Only KPI section should scroll */
+.kpi-scroll-wrapper {
+  max-height: 250px;   /* adjust height */
+  overflow-y: auto;
+  margin-bottom: 16px;
+  padding-right: 8px;
+}
+
+/* Beautiful scrollbar (optional) */
+.kpi-scroll-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.kpi-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.kpi-scroll-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.kpi-card {
+  min-width: 200px;   /* adjust size */
+  height: 120px;      /* adjust height */
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+/* Optional: nicer scrollbar */
+/* .kpi-scroll-row::-webkit-scrollbar {
+  height: 6px;
+} */
+.kpi-scroll-row::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}

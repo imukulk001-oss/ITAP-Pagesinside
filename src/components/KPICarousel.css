@@ -1,0 +1,50 @@
+.kpi-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.kpi-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Hide ugly browser scrollbar */
+.kpi-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.kpi-card {
+  min-width: 160px;
+  background: white;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.kpi-arrow-btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  font-size: 18px;
+}
+
+.kpi-arrow-btn.left {
+  margin-right: 8px;
+}
+
+.kpi-arrow-btn.right {
+  margin-left: 8px;
+}

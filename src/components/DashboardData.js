@@ -20,6 +20,8 @@ export const dashboardSections = [
         features: [
           { title: "Create Task", icon: <FaPlus /> },
           { title: "Task List", icon: <FaList /> },
+          { title: "Charts", icon: <FaList /> ,route: "/charts"},
+
         ],
       },
     ],
