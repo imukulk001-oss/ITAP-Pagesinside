@@ -77,3 +77,31 @@
   flex: 1;
   min-width: 250px;
 }
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  background: #fff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination .active-page {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
