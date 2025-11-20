@@ -1,6 +1,8 @@
 // src/pages/Charts.jsx
 import React, { useState } from "react";
 import KPICarousel from "../components/KPICarousel";
+import "./Charts.css";
+// import { title } from "framer-motion/client";
 
 import {
   BarChart,
@@ -15,21 +17,20 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import "./Charts.css";
 
 const Charts = () => {
   // KPI Summary
   const kpiStats = [
-    { title: "Total Requests", value: "1,248", change: "+8.3%" },
-    { title: "Avg. Response Time", value: "214 ms", change: "+3.1%" },
-    { title: "Error Rate", value: "0.7%", change: "+0.2%" },
-    { title: "CPU Utilization", value: "72%", change: "+1.2%" },
-    { title: "Memory Usage", value: "65%", change: "+0.8%" },
-    { title: "Throughput", value: "17.4k ops", change: "+4.7%" },
-    { title: "SLA Compliance", value: "99.1%", change: "+0.4%" },
-    { title: "API Success Rate", value: "99.8%", change: "+0.3%" },
-    { title: "DB Latency", value: "98ms", change: "+0.5%" },
-    { title: "Cache Hit Rate", value: "94%", change: "+0.3%" },
+    { title: "Total Proposals", value: "372" },
+    { title: "Total FTT Proposals", value: "340" },
+    { title: "Total FTC Proposals", value: "32" },
+    { title: "Labs with No Proposals", value: "0" },
+    { title: "Labs with Max Proposals", value: "32" },
+    { title: "Labs with no Paticipation", value: "12" },
+    { title: "Evaluated Proposals", value: "4" },
+    { title: "Accepted Proposals", value: "3" },
+    { title: "Rejected Proposals", value: "1" },
+    // { title: "Cache Hit Rate", value: "94%" },
   ];
 
   // Sample chart data
@@ -59,6 +60,8 @@ const Charts = () => {
     { title: "Metric Group 6", pieData, barData },
     { title: "Metric Group 7", pieData, barData },
     { title: "Metric Group 8", pieData, barData },
+    // { title: "Metric Group 9", pieData, barData },
+    // { title: "Metric Group 10", pieData, barData },
   ];
 
   // Pagination logic
@@ -73,7 +76,7 @@ const Charts = () => {
   return (
     <div className="dashboard-container">
       <div className="charts-header">
-        <h1>Operations Dashboard</h1>
+        <h1>Dashboard</h1>
         <p>
           Viewing: <span className="view-title">KPI Dashboard</span>
         </p>
@@ -102,6 +105,8 @@ const Charts = () => {
                       outerRadius={80}
                       dataKey="value"
                       label
+                      isAnimationActive={false}
+                      animationDuration={0}
                     >
                       {chart.pieData.map((entry, i) => (
                         <Cell key={i} fill={pieColors[i]} />
@@ -116,12 +121,16 @@ const Charts = () => {
               {/* Bar Chart */}
               <div className="bar-container">
                 <ResponsiveContainer width="100%" height={220}>
-                  <BarChart data={chart.barData}>
+                  <BarChart data={chart.barData} isAnimationActive={false}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip />
-                    <Bar dataKey="value" fill="#7A8EF8" />
+                    <Bar
+                      dataKey="value"
+                      fill="#7A8EF8"
+                      isAnimationActive={false}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

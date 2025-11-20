@@ -4,7 +4,7 @@ import "./KPICarousel.css";
 const KPICarousel = ({ kpiStats }) => {
   const scrollRef = useRef(null);
 
-  const scrollAmount = 300; // how much to scroll per click
+  const scrollAmount = 3000; // how much to scroll per click
 
   const scrollLeft = () => {
     scrollRef.current.scrollBy({
@@ -33,7 +33,7 @@ const KPICarousel = ({ kpiStats }) => {
           <div key={index} className="kpi-card">
             <h4>{kpi.title}</h4>
             <h2>{kpi.value}</h2>
-            <p>{kpi.change} vs last week</p>
+            {/* <p>{kpi.change}</p> */}
           </div>
         ))}
       </div>
